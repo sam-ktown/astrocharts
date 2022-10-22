@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="Astro Charts" />
+        <h1>Astro Charts</h1>
         <hr />
         <p className="description">
           Birth Data Entry:
