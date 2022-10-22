@@ -5,10 +5,10 @@ import Header from "@components/Header";
 import Footer from '@components/Footer'
 
 export default function Success() {
-  var nameValue = '';
-  if (typeof window !== 'undefined') {
-    nameValue = document.feedback.name.value;
-  }
+  var nameValue = 'test';
+//   if (typeof window !== 'undefined') {
+//     nameValue = document.feedback.name.value;
+//   }
 
   return (
     <div className="container">
