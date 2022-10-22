@@ -20,8 +20,11 @@ exports.handler = function (event, context) {
   // Found the name.
   // Sends a HTTP success code
   //return res.status(200).json({ data: `${body.first} ${body.last}` })
+  
+  const msg = body.first + body.last
+  
   return {
     statusCode: 200,
-    body: JSON.stringify({ message: `${body.first} ${body.last}` }),
+    body: JSON.stringify({ message: msg }),
   };  
 }
