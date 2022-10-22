@@ -1,6 +1,6 @@
 exports.handler = function (event, context) {
   // Get data submitted in request's body.
-  const body = event.body
+  const body = JSON.parse(event.body)
 
   // Optional logging to see the responses
   // in the command line where next.js app is running.
