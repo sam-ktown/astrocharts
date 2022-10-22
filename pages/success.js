@@ -5,6 +5,11 @@ import Header from "@components/Header";
 import Footer from '@components/Footer'
 
 export default function Success() {
+  var nameValue = '';
+  if (typeof window !== 'undefined') {
+    nameValue = document.feedback.name.value;
+  }
+
   return (
     <div className="container">
       <Head>
@@ -14,13 +19,8 @@ export default function Success() {
 
       <main>
         <Header title="Astro Charts" />
- 
-    {
-    if (typeof window !== 'undefined') {
-      document.feedback.name.value;
-    }
-    }
-        <h2> Horoscope:</h2>
+
+        <h2>{nameValue} Horoscope:</h2>
         <img src="test.jpg" />
       </main>
 
