@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>Astro Charts</h1>
+        <Header title="Astro Charts" />
         <img src="logo.png" />
         <hr />
         <p className="description">
