@@ -12,7 +12,8 @@ export default function Success() {
       </Head>
 
       <main>
-        <h1>Horoscope:</h1>
+        <h1>Astro Charts</h1>
+        <h2>Horoscope:</h2>
         <img src="test.jpg" />
       </main>
 
