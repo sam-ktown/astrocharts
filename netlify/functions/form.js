@@ -1,6 +1,6 @@
-export default function handler(req, res) {
+exports.handler = function (event, context) {
   // Get data submitted in request's body.
-  const body = req.body
+  const body = event.body
 
   // Optional logging to see the responses
   // in the command line where next.js app is running.
@@ -10,10 +10,18 @@ export default function handler(req, res) {
   // and returns early if they are not found
   if (!body.first || !body.last) {
     // Sends a HTTP bad request error code
-    return res.status(400).json({ data: 'First or last name not found' })
+    //return res.status(400).json({ data: 'First or last name not found' })
+    return {
+      statusCode: 400,
+      body: JSON.stringify({ message: "First or last name not found" }),
+    };
   }
 
   // Found the name.
   // Sends a HTTP success code
-  res.status(200).json({ data: `${body.first} ${body.last}` })
+  //return res.status(200).json({ data: `${body.first} ${body.last}` })
+  return {
+    statusCode: 200,
+    body: JSON.stringify({ message: `${body.first} ${body.last}` }),
+  };  
 }
