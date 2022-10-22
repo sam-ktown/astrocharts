@@ -27,7 +27,7 @@ exports.handler = async (event, context) => {
   
   return {
     statusCode: 200,
-    body: `hello`,
-    //body: JSON.stringify({ message: "test" }),    
+    //body: `hello`,
+    body: JSON.stringify({ message: "test" }),    
   };  
 }
