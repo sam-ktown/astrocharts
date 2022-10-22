@@ -36,17 +36,16 @@ export default function PageWithJSbasedForm() {
 //     )
 
     let response = await fetch(url);
-    if (response.ok) { // if HTTP-status is 200-299
-      // get the response body (the method explained below)
-      let json = await response.json();
-    } else {
-      alert("HTTP-Error: " + response.status);
-    }
+    //if (response.ok) { // if HTTP-status is 200-299
+    let result = await response.json();
+    //} else {
+    //  alert("HTTP-Error: " + response.status);
+    //}
     
     // Get the response data from server as JSON.
     // If server returns the name submitted, that means the form works.
     //const result = await response.json()
-    //alert(`Is this your full name: ${response.message}`)
+    alert(`Is this your full name: ${result.message}`)
   }
   return (
     // We pass the event to the handleSubmit() function on submit.
