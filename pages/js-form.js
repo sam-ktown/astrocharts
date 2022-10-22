@@ -35,7 +35,7 @@ export default function PageWithJSbasedForm() {
 //       response => response.json()
 //     )
 
-    let response = await fetch(url);
+    let response = await fetch(endpoint, options);
     //if (response.ok) { // if HTTP-status is 200-299
     let result = await response.json();
     //} else {
