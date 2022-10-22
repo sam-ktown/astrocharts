@@ -13,6 +13,7 @@ export default function Home() {
 
       <main>
         <h1>Astro Charts</h1>
+        <img src="logo.jpg" />
         <hr />
         <p className="description">
           Birth Data Entry:
