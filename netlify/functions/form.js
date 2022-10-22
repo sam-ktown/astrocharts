@@ -21,7 +21,7 @@ exports.handler = function (event, context) {
   // Sends a HTTP success code
   //return res.status(200).json({ data: `${body.first} ${body.last}` })
   
-  const msg = body.first + body.last
+  //const msg = body.first + body.last
   
   return {
     statusCode: 200,
