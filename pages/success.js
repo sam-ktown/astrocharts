@@ -12,7 +12,7 @@ export default function Success() {
       </Head>
 
       <main>
-        <h1>Astro Charts</h1>
+        <Header title="Astro Charts" />
         <h2>Horoscope:</h2>
         <img src="test.jpg" />
       </main>
