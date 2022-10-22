@@ -20,9 +20,10 @@
   margin: 15px 0;
   padding: 12px 20px;
   width: 100%;
+  border-radius: 8px;
 }
 .button:hover {
-  background-color: #0033ccA; 
+  background-color: #0033cc; 
   color: white;
 }
 
