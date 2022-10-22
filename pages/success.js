@@ -14,7 +14,7 @@ export default function Success() {
 
       <main>
         <Header title="Astro Charts" />
-        <h2>{document.feedback.name.value;} Horoscope:</h2>
+        <h2>{document.feedback.name.value} Horoscope:</h2>
         <img src="test.jpg" />
       </main>
 
