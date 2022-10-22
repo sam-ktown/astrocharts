@@ -29,9 +29,11 @@ export default function PageWithJSbasedForm() {
     }
 
     // Send the form data to our forms API on Vercel and get a response.
-    const response = await fetch(endpoint, options).then (
-      response => response.json()
-    )
+    const response = await fetch(endpoint, options);
+    
+//     .then (
+//       response => response.json()
+//     )
 
     // Get the response data from server as JSON.
     // If server returns the name submitted, that means the form works.
