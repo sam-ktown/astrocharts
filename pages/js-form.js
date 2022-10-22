@@ -36,7 +36,7 @@ export default function PageWithJSbasedForm() {
     // Get the response data from server as JSON.
     // If server returns the name submitted, that means the form works.
     //const result = await response.json()
-    alert(`Is this your full name: ${response.message}`)
+    //alert(`Is this your full name: ${response.message}`)
   }
   return (
     // We pass the event to the handleSubmit() function on submit.
