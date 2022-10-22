@@ -23,7 +23,7 @@ export default function Formtest(req, res) {
       <main>
         <Header title="Form Test - Astro Charts" />
 
-        <h2>{nameValue} Horoscope:</h2>
+        <h2> Horoscope:</h2>
         <img src="test.jpg" />
       </main>
 
