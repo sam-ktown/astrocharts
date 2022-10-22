@@ -13,7 +13,7 @@ export default function Success() {
 
       <main>
         <h1>Horoscope:</h1>
-        <img src="test.jpg">
+        <img src="test.jpg" />
       </main>
 
       <Footer />
