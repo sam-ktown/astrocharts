@@ -1,4 +1,4 @@
-exports.handler = function (event, context) {
+exports.handler = async (event, context) => {
   // Get data submitted in request's body.
   const body = JSON.parse(event.body)
 
@@ -25,6 +25,7 @@ exports.handler = function (event, context) {
   
   return {
     statusCode: 200,
-    body: JSON.stringify({ message: "test" }),
+    body: `hello`),
+    //body: JSON.stringify({ message: "test" }),    
   };  
 }
