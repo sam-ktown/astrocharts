@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <>
       <footer className={styles.footer}>
-        Copyright © 2022 Adjovi Koene
+        Copyright © 2022 Astro Charts
       </footer>
     </>
   )
